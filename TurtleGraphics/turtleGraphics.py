@@ -1,0 +1,16 @@
+import turtle
+t = turtle.Turtle()
+screen = t.getscreen()
+screen.tracer(0,0)
+screen.setworldcoordinates(0,0,600,600)
+t.color("#7d7ec0")
+t.fillcolor("#7d7ec0")
+t.begin_fill()
+t.goto(0,0)
+for x in range(1,600):
+    t.goto(x,x)
+t.goto(x,0)
+t.goto(0,0)
+t.end_fill()
+screen.update()
+screen.exitonclick()
