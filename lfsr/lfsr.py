@@ -21,5 +21,6 @@ def test(n, taps):
                 shift_right(sr)
                 sr[0] = temp
                 print(sr[0], end=', ')
+        print()
 
 test(8, [8,6,5,4])
